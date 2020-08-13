@@ -1,10 +1,6 @@
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="https://toppng.com/uploads/preview/cocktail-icon-clipart-cocktail-drinks-splash-11562965982ikwi02c99o.png" width="40" height="40" alt="" loading="lazy">
-  </a>
-</nav>
 
-<div class="container-root">
-  <h2>Awesome Cocktails</h2>
-  <h3><%= link_to 'Come discover what we have ...', cocktails_path %></h3>
+<div class="img-cocktail">
+  <%= link_to cocktails_path do %>
+     <%= image_tag "cocktail.png" %>
+  <% end %>
 </div>
