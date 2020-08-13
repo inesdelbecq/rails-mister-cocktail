@@ -1,0 +1,25 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background-color: white;
+}
+
+.container-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color:#276FBF;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  color:#183059;
+  margin-top:10px;
+}
+
