@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  margin:0px;
+  justify-content:flex-start;
+  max-width: 100%;
+  padding-left: 0px;
+  height:790px;
+}
+
+
+
+// @media (min-width: 992px){
+//   .col-lg-10 {
+//     flex: 0 0 83.3333333333%;
+//     max-width: 83%;
+//   }
+// }
+
+// @media(max-width: 480px) {
+//   .col-lg-10 {
+//     flex: 0 0 83.3333333333%;
+//     max-width: 83%;
+//   }
+
+// }
