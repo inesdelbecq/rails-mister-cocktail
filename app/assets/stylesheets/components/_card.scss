@@ -1,14 +1,62 @@
 .card {
   margin:10px;
+  opacity: 0.9;
+
+  h5, .trash, .edit {
+    display:none;
+  }
+
+
 }
 
-.card-body {
+.card:hover {
+  opacity:1;
+  h5, .trash, .edit {
+    display:block;
+  }
+  transition-timing-function: ease;
+}
+
+h5 {
+  bottom: 10px;
+  display: block;
+  position: absolute;
+  color:black;
+  font-family: 'Raleway';
+  font-weight: 800;
+      font-size: 23px;
+    text-shadow: white 1px -2px 1px;
+  // background-color: black;
+  // opacity: 0.8;
+  // padding: 5px;
+  // border-radius: 5px;
+}
+
+.card-img-overlay {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  height:40px;
+  justify-content: center;
 }
 
-.card-text {
-  margin-bottom: 5px;
+.trash {
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }
+
+.edit {
+  position: absolute;
+  right: 40px;
+  top: 5px;
+
+}
+
+a.far.fa-trash-alt {
+  color:white;
+  font-size: 20px;
+ }
+
+ a.fas.fa-pencil-alt {
+  color:white;
+  font-size: 20px;
+ }
+
