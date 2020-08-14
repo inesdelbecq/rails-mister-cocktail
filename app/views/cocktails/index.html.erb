@@ -1,16 +1,18 @@
-<div class="title">
-  <h1>Cocktails</h1>
+<nav class="navbar navbar-dark justify-content-between" style="background-color: white;">
+  <a class="navbar-brand" href="#">
+    <%= cl_image_tag "martini-logo", width: 40, height: 40 %> The Fitz
+  </a>
+  <div class="link-to-new-cocktail">
+  <%= link_to "Create a new cocktail", new_cocktail_path %>
+  </div>
+</nav>
+
+<div class="cocktails-container">
+  <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail.name , cocktail_path(cocktail) %>
+  <% end %>
 </div>
 
-  <div class="card" style="width: 18rem;">
-    <% @cocktails.each do |cocktail| %>
-    <img src="https://source.unsplash.com/1600x900/?cocktail" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text"><%= link_to cocktail.name , cocktail_path(cocktail) %></p>
-    </div>
-    <% end %>
-  </div>
 
 
 
-<%= link_to "Create a new cocktail", new_cocktail_path %>
