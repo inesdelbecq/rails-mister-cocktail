@@ -10,11 +10,14 @@
   <div class="cocktails-container">
     <% @cocktails.each do |cocktail| %>
       <div class="card" style="width: 18rem;">
-        <% if cocktail.photo.attached? %>
-          <%= cl_image_tag cocktail.photo.key, width:286, height:88, crop: :fill%>
-        <% else %>
+        <div class="image-card">
+          <%= link_to "", cocktail_path(cocktail), :class => "far fa-trash-alt", method: :delete, data: { confirm: "Are you sure?" }  %>
+          <% if cocktail.photo.attached? %>
+            <%= cl_image_tag cocktail.photo.key, width:286, height:88, crop: :fill%>
+          <% else %>
           <img class="card-img-top" src="..." alt="Card image cap">
-        <% end %>
+          <% end %>
+        </div>
         <div class="card-body">
           <p class="card-text"><%= link_to cocktail.name , cocktail_path(cocktail) %></p>
         </div>
