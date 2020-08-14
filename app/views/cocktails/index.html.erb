@@ -5,12 +5,10 @@
   </div>
 </nav>
 
-<div class="cocktails-container">
-  <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail.name , cocktail_path(cocktail) %>
-  <% end %>
+<div class="main-container" style="background-image:url('<%= cl_image_tag("cocktail-big.jpg"), height: 300, width: 400, crop: :fill %>')">
+  <div class="cocktails-container">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail.name , cocktail_path(cocktail) %>
+    <% end %>
+  </div>
 </div>
-
-
-
-
