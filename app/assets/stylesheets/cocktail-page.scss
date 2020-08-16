@@ -7,6 +7,36 @@
   height:790px;
 }
 
+.description {
+  margin-left: 36px;
+
+  h1 {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size:100px;
+    margin-bottom:100px
+  }
+
+  h2 {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size:50px;
+    margin-bottom:30px
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  ul {
+    border-left-color: orange;
+    border-left-style: solid;
+    padding-left:10px;
+  }
+
+}
+
+
 
 
 // @media (min-width: 992px){
@@ -16,10 +46,10 @@
 //   }
 // }
 
-// @media(max-width: 480px) {
-//   .col-lg-10 {
-//     flex: 0 0 83.3333333333%;
-//     max-width: 83%;
-//   }
+@media(max-width: 480px) {
+  .illustration img {
+    height:100%;
+    width:400px;
+  }
 
-// }
+}
